@@ -6,7 +6,7 @@ public class ArraySumAverage {
         int[] numArray = ArrayUtility.inputArray();
 
         long sum = sum(numArray);
-        int average = average(numArray);
+        double average = average(numArray);
 
         System.out.println("Sum of the numbers : " + sum);
         System.out.println("Average of the numbers : " + average);
@@ -22,8 +22,8 @@ public class ArraySumAverage {
         return sum;
     }
 
-    public static int average(int[] numArray) {
-        long sum = sum(numArray);
-        return (int) (sum) / numArray.length;
+    public static double average(int[] numArray) {
+        double sum = sum(numArray);
+        return (sum / numArray.length);
     }
 }
