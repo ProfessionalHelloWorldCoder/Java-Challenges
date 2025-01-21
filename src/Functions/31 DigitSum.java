@@ -12,13 +12,11 @@ class DigitSum {
     private static int calculateDigitSum(int number) {
         int sum = 0;
         int temp;
-        int i = 1;
 
         while (number > 0) {
             temp = number % 10;
             sum += temp;
             number /= 10;
-            i++;
         }
 
         return sum;
